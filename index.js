@@ -225,7 +225,7 @@ function animate() {
 
         if (enemy.radius - 10 > 10) {
           //increase score
-          score += 100;
+          score += 10;
           scoreEl.innerHTML = score;
           gsap.to(enemy, { radius: enemy.radius - 10 }); // shrinking enemy radius by on hit
           setTimeout(() => {
@@ -234,7 +234,7 @@ function animate() {
         } else {
           //removing enemy completely
           //increase score
-          score += 250;
+          score += 25;
           scoreEl.innerHTML = score;
           setTimeout(() => {
             enemies.splice(index, 1);
